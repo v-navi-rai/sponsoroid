@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>prject</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./done.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="./favicon.ico" type="image/x-icon">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+
+</head>
+<body id="myPage">
+
+
+<!-- Navbar -->
+<div class="top">
+ <div class="bar theme-1 left-align">
+  <a href="#" class="bar-item btn -hide-small c-teal c-hover-white"><i></i>Home</a>
+  <a href="#team" class="bar-item btn right ci -hide-small"></a>
+  <a href="#signup" class="bar-item btn  right -hide-small  margin-left ci c-teal c-hover-white">Join Us</a>
+  <a href="#Work" class="bar-item btn -hide-small c-hover-white">Work</a>
+  <a href="#contact" class="bar-item btn -hide-small c-hover-white">Contact</a>
+  <a href="#" class="bar-item btn -hide-small c-hover-white">Blog</a>
+
+  
+  </div>
+ 
+ </div>
+
+  
+<!-- Image Header -->
+<div class="imgg ">
+    <img src="Sponsoroid.png" class="photo" alt="boat">
+    <div class="learn-more ">  
+        <button onclick="document.getElementById('id01').style.display='block'" class="lm-btn ci c-hover-teal" title="">LEARN MORE</button>
+      </div>
+    
+  </div>
+  <!-- Work Row -->
+  <div class="he" id="signup">
+<h1 class="joinas ci" title="">  Join As  </h1>
+  </div>
+
+
+<div class="container1">
+
+    <div class="creator">
+        <img src="creator.jpg" alt="" class="creator1">
+        <h1 id="create">CONTENT CREATOR</h1>
+    </div>
+    <div class="creator">
+      <img src="creator.jpg" alt="" class="creator1">
+      <h1 id="create">COMPANY</h1>
+  </div>
+
+<!--Our work-->
+</div>
+    <div class="-container padding-2 theme-4" id="contact">
+      <div class="row">
+        <div class="">
+          <div class="center" id="Work">
+            <h1 class="he1">OUR WORK</h1>
+            <p>Lorem ipsum dolor sit amet, nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          
+          </div>
+          <div class="colm5 center">
+            <h1 class="he1">Content Creators</h1>
+            <h1 class="he1 center">6969</h1></div>
+            
+            <div class="colm5 center right">
+              <h1 class="he1">Company</h1>
+            <h1 class="he1 center">69</h1></div>
+        </div>
+      </div>
+    </div>
+    
+<!-- Contact Container -->
+<div class="-container padding-64 theme-2" id="contact">
+    <div class="row">
+      <div class="colm5">
+      <div class="padding-16"><span class="xlarge cr-teal">Contact Us</span></div>
+        <h3>Address</h3>
+        <p>MAKE WITH LOVE 🤍</p>
+        <p><i class="xlarge"></i>   IIT ISM DHANBAD</p>
+        <p><i class=" xlarge"></i>   1714 69 1714</p>
+        <p><i class=" xlarge"></i>   adeshland@harami.com</p>
+      </div>
+      <div class="colm7">
+        <form class="-container padding-16 c-white" action="/action_page.php" target="_blank">
+        <div class="section">      
+          <label>Name</label>
+          <input class="input" type="text" name="Name" required>
+        </div>
+        <div class="section">      
+          <label>Email</label>
+          <input class="input" type="text" name="Email" required>
+        </div>
+        <div class="section">      
+          <label>Message</label>
+          <input class="input" type="text" name="Message" required>
+        </div>  
+        <input class="w3-check" type="checkbox" checked name="Like">
+        <label>I Like it!</label>
+        <button type="submit" class="btn right theme-2">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+<footer class="container w3-padding-16 theme-1 center">
+    <h4>Follow Us</h4>
+    <a class="btn xlarge c-teal c-hover-white" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+    <a class="btn xlarge c-teal c-hover-white" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+    <a class="btn xlarge c-teal c-hover-white" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+    <h4>made by me</h4>
+  
+  </footer>
+
+
+<script>
+  // Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>

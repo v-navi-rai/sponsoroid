@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/Login-creator.css">
+    
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    
+
+  </head>
+  <body>
+
+
+    
+
+
+    <main>
+
+      <div class="container">
+        <!--Data or Content-->
+        <div class="box-1">
+            <div class="content-holder">
+                <h2>Welcome Back!</h2>
+               
+                <button class="button-1" ><a href="/creatorform"> Sign up</a></button>
+                <button class="button-2" onclick="login()">Login</button>
+            </div>
+        </div>
+  
+        
+        <!--Forms-->
+        <div class="box-2">
+            <div class="login-form-container">
+                <form action="/creatorlogin" method="post">
+                <h1>Login Form</h1>
+                <input type="text"  name="username" placeholder="Username" class="input-field">
+                <br><br>
+                <input type="password" name="password" placeholder="Password" class="input-field">
+                <br><br>
+                <button class="login-button" type="submit">Login</button>
+              </form>
+            </div>
+  
+  
+  <!--Create Container for Signup form-->
+        <div class="signup-form-container">
+            <form action="/creatorsignup" method="post">
+            <h1>Sign Up Form</h1>
+            <input type="text" name="username" placeholder="Username" class="input-field">
+            <br><br>
+            <input type="email" name="email" placeholder="Email" class="input-field">
+            <br><br>
+            <input type="password" name="password" placeholder="Password" class="input-field">
+            <br><br>
+            <a href="/creatorform">Sign Up</a>
+          </form>
+        </div>
+  
+  
+  
+        </div>
+    
+    </main>
+	<script src="js/Login-creator.js"></script>
+  </body>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Sign Up Form by Colorlib</title>
+
+<link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+<link rel="stylesheet" href="css/creatorform.css">
+<meta name="robots" content="noindex, follow">
+<script nonce="0b077249-2a3d-42f9-bc97-260f736f3a6d">(function(w,d){!function(bg,bh,bi,bj){bg[bi]=bg[bi]||{};bg[bi].executed=[];bg.zaraz={deferred:[],listeners:[]};bg.zaraz.q=[];bg.zaraz._f=function(bk){return function(){var bl=Array.prototype.slice.call(arguments);bg.zaraz.q.push({m:bk,a:bl})}};for(const bm of["track","set","debug"])bg.zaraz[bm]=bg.zaraz._f(bm);bg.zaraz.init=()=>{var bn=bh.getElementsByTagName(bj)[0],bo=bh.createElement(bj),bp=bh.getElementsByTagName("title")[0];bp&&(bg[bi].t=bh.getElementsByTagName("title")[0].text);bg[bi].x=Math.random();bg[bi].w=bg.screen.width;bg[bi].h=bg.screen.height;bg[bi].j=bg.innerHeight;bg[bi].e=bg.innerWidth;bg[bi].l=bg.location.href;bg[bi].r=bh.referrer;bg[bi].k=bg.screen.colorDepth;bg[bi].n=bh.characterSet;bg[bi].o=(new Date).getTimezoneOffset();if(bg.dataLayer)for(const bt of Object.entries(Object.entries(dataLayer).reduce(((bu,bv)=>({...bu[1],...bv[1]})))))zaraz.set(bt[0],bt[1],{scope:"page"});bg[bi].q=[];for(;bg.zaraz.q.length;){const bw=bg.zaraz.q.shift();bg[bi].q.push(bw)}bo.defer=!0;for(const bx of[localStorage,sessionStorage])Object.keys(bx||{}).filter((bz=>bz.startsWith("_zaraz_"))).forEach((by=>{try{bg[bi]["z_"+by.slice(7)]=JSON.parse(bx.getItem(by))}catch{bg[bi]["z_"+by.slice(7)]=bx.getItem(by)}}));bo.referrerPolicy="origin";bo.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(bg[bi])));bn.parentNode.insertBefore(bo,bn)};["complete","interactive"].includes(bh.readyState)?zaraz.init():bg.addEventListener("DOMContentLoaded",zaraz.init)}(w,d,"zarazData","script");})(window,document);</script></head>
+<body>
+<div class="main">
+<div class="container">
+<form method="POST" action="/creatorsignup" class="appointment-form"  enctype="multipart/form-data" id="appointment-form">
+<h2>Set Your Information</h2>
+<div class="form-group-1">
+<input type="text" name="username" id="title" placeholder="Username" required />
+<input type="text" name="name" id="name" placeholder="Your Name" required />
+<input type="text" name="email" id="name" placeholder="E-mail" required />
+<input type="link" name="Instalink" id="email" placeholder="Instagram link" required />
+<input type="link" name="Youtubelink" id="email" placeholder="Channel Link" required />
+<input type="password" name="password" id="channel link" placeholder="Set Your Password" required />
+<div class="select-list">
+<select name="TypeofContent" id="course_type" >
+<option slected value="">Type Of Your Content</option>
+<option value="Gaming">Gaming</option>
+<option value="LifeStyle">LifeStyle</option>
+<option value="Technology">Technology</option>
+<option value="Dancing">Dancing</option>
+<option value="Sports">Sports</option>
+</select>
+</div>
+</div>
+<div class="form-group-2">
+<h3>Tell Us More About Yourself</h3>
+<div class="select-list">
+ <h3>Write a description for your profile</h3>
+ <input type="text" name="Descryption" id="title" placeholder="Write about yourself" required />
+</select>
+</div>
+<h3>Upload your Profile Photo</h3>
+  <input type="file" id="myFile" name="avatar">
+</div>
+<div class="form-check">
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1" ><I> agree to></I> <a href="" >Terms and conditions</a></label>
+<div class="form-submit">
+<input type="submit"  id="submit" class="submit" value="Submit" />
+
+</div>
+</form>
+</div>
+</div>
+</body>
+</html>

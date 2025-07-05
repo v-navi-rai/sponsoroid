@@ -1,0 +1,22 @@
+{
+  "name": "sponsoroid-main",
+  "version": "1.0.0",
+  "description": "A website with connects content creators with companies having similar vision for sponsorship and promotion opportunities!",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "alert": "^6.0.2",
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "lodash": "^4.17.21",
+    "mongoose": "^7.2.0",
+    "mongoose-encryption": "^2.1.2",
+    "multer": "^2.0.1"
+  },
+  "keywords": []
+}
