@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>prject</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/done.css">
+
+</head>
+<body id="myPage">
+
+
+<!-- Navbar -->
+<div class="top">
+  <div class="bar theme-1 left-align">
+    <a href="#" class="bar-item btn -hide-small c-teal c-hover-white"><i></i>Home</a>
+    <form action="/temp2" method="post">
+      <input type="" style="display: none;" name="name" value="<%=y.name%>">
+      <input type="" style="display: none;" name="email" value="<%=y.email%>">
+      <input type="" style="display: none;" name="username" value="<%=y.username%>">
+      <input type="" style="display: none;" name="cc" value="<%=y.TypeofContent%>">
+      <input type="" style="display: none;" name="ilink" value="<%=y.Instalink%>">
+      <input type="" style="display: none;" name="ulink" value="<%=y.Youtubelink%>">
+      <input type="" style="display: none;" name="Description" value="<%=y.Descryption%>">
+      <input type="" style="display: none;" name="avatar" value="<%=y.avatar%>">
+    <button class=" right  margin-left cir" type="submit"><img src="images/<%=y.avatar%>" style="border-radius: 20px" height="40px" alt=""></button>
+  </form>
+    <a href="#Work" class="bar-item btn -hide-small c-hover-white">Work</a>
+    <a href="#contact" class="bar-item btn -hide-small c-hover-white">Contact</a>
+    <a href="#" class="bar-item btn -hide-small c-hover-white">Blog</a>
+  </div>
+</div>
+  
+<!-- Work Row -->
+<div class="w3-row-padding padding-64 theme-4" id="work" >
+<%  comp.forEach(function(item){ %>
+  <%if(item.TypeofContent===y.TypeofContent){%>
+<form action="/temp" method="post">
+  <input type="" style="display: none;" name="name" value="<%=item.name%>">
+  <input type="" style="display: none;" name="email" value="<%=item.email%>">
+  <input type="" style="display: none;" name="username" value="<%=item.username%>">
+  <input type="" style="display: none;" name="cc" value="<%=item.TypeofContent%>">
+  <input type="" style="display: none;" name="Description" value="<%=item.Descryption%>">
+  <input type="" style="display: none;" name="avatar" value="<%=item.avatar%>">  
+  <!-- <button type="submit"> -->
+<div class="btn1 quarter ">
+
+    <div class="card c-white">
+      <img src="images/<%=item.avatar%>" alt="Snow" style="width:100%" height="200px">
+      <div class="-container">
+      <h3><%=item.name%></h3>
+      <h4>Type of Content:</h4>
+      <h4> <%=item.TypeofContent%></h4>
+      <button type="submit"> Profile</button>
+      </div>
+      </div>
+     
+    </div>
+    <%}%>
+  <!-- </button> -->
+  
+  </form>    
+ <%  }) %> 
+
+ <%  comp.forEach(function(item){ %>
+ <%if(item.TypeofContent!==y.TypeofContent){%>
+  <form action="/temp" method="post">
+    <input type="" style="display: none;" name="name" value="<%=item.name%>">
+    <input type="" style="display: none;" name="email" value="<%=item.email%>">
+    <input type="" style="display: none;" name="username" value="<%=item.username%>">
+    <input type="" style="display: none;" name="cc" value="<%=item.TypeofContent%>">
+    <input type="" style="display: none;" name="Description" value="<%=item.Descryption%>">
+    <input type="" style="display: none;" name="avatar" value="<%=item.avatar%>">  
+<div class="btn1 quarter ">
+
+  <div class="card c-white">
+    <img src="images/<%=item.avatar%>" alt="Snow" style="width:100%" height="200px">
+    <div class="-container">
+      <h3><%=item.name%></h3>
+      <h4>Type of Content:</h4>
+      <h4> <%=item.TypeofContent%></h4>
+      <button type="submit"> Profile</button>
+    </div>
+  </div>
+</div>
+      <%}%>
+  </form>
+   <%  }) %>     
+</div>
+
+<!-- Container -->
+<div class="wcontainer" style="position:relative">
+  <a onclick="w3_open()" class="btn xlarge cir c-teal"
+  style="position:absolute;top:-28px;right:24px">+</a>
+</div>
+
+
+
+  <!-- Footer -->
+  <footer class="container padding-16 theme-1 center">
+    <h4>Follow Us</h4>
+    <a class="btn xlarge c-teal c-hover-white" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+    <a class="btn xlarge c-teal c-hover-white" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+    <a class="btn xlarge c-teal c-hover-white" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+    <h4>made by me</h4>
+  
+  </footer>
+
+
+<script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>

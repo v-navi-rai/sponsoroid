@@ -1,0 +1,92 @@
+body{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+   /* background-image: url(https://images.unsplash.com/photo-1614850523011-8f49ffc73908?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nnx8fGVufDB8fHx8&w=1000&q=80); */
+    background-color:#65CCB8;
+    font-family: "Montserrat", sans-serif;
+    color: #f5f6f7;
+    font-family: sans-serif;
+    padding: 15px;
+    font-size:16px;
+  }
+  h1, p{
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    margin: 1rem auto;
+    color: #182628;
+  }
+  
+  form{
+    font-family: "Montserrat", sans-serif;
+    width:70vw;
+    max-width: 510px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding: 1em;  
+    }
+    fieldset{
+      border: none;
+      padding: 1em 0;
+      border-bottom: 3px solid #F2F2F2;
+      margin-left: 5px;
+      border-radius: 1.5px;
+    }
+    fieldset:last-of-type{
+      border-bottom: none;
+      padding: 1em;
+    }
+    label{
+      display: block;
+      margin:0.5rem 0;
+    }
+    .form-structure{
+      background-color:#182628;
+      min-width: 300px;
+      border: 2px solid 2f3f4f;
+      border-radius: 10px;
+      box-shadow: 5px 5px 15px #182628;
+    }
+  
+    .inline{
+      width: unset;
+      margin:0 0 0.5em 0;
+      vertical-align: middle; 
+    }
+    input, textarea, select{
+      margin: 10px 0 0 0px;
+      width: 98%;
+      min-height: 2em;
+    }
+    input, textarea{
+      background-color:#3b3b4b;
+      border:1px solid #3a3b3c;
+    }
+  
+    ::placeholder{
+      color: #ffffff;
+    }
+    textarea{
+      margin-bottom: 3px;
+    }
+  
+    input[type="Submit"]{
+      font-family: "Montserrat", sans-serif;
+      
+      display: block;
+      width: auto;
+      margin: 2em;
+      margin-left: auto;
+      margin-right: auto;
+      height: 2.5em;
+      font-size: 1.1em;
+      min-width: 300px;
+      border-radius: 50px;
+      border: solid 2px #F2F2F2;
+      background-color: #182628;
+      color: #F2F2F2;  
+      box-shadow: 5px 5px 15px #182628;
+    }
+
+
+    
